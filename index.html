@@ -9,12 +9,24 @@
 <body>
     <header>
         <h1>Simple clock website to display time</h1>
+        <div class="Toggle">
+            <div >Toggle clock Type </div>
+            <label class="switch">
+                <input type="checkbox" id="toggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
     </header>
     <main>
-        <div id="clock-container">
-            <div id="hour"></div>
-            <div id="minute"></div>
-            <div id="seconds"></div>
+        <div id="analog-clock-container" data-analog="">
+            <div id="hour" data-analog=""></div>
+            <div id="minute" data-analog=""></div>
+            <div id="seconds" data-analog=""></div>
+        </div>
+        <div class="digital-clock-container none" data-digital="">
+            <div id="hour-box" class="time-box none" data-digital="">10</div>
+            <div id="minute-box" class="time-box none" data-digital="">00</div>
+            <div id="seconds-box" class="time-box none" data-digital="">00</div>
         </div>
     </main>
     <script src="./script.js"></script>
